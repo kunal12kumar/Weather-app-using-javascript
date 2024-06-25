@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a weather website." />
+    <link rel="stylesheet" href="weather.css" />
+    <script src="weather.js" defer></script>
+    <title>weather website</title>
+  </head>
+
+  <body>
+    <form class="inputb">
+      <input type="text" id="searchbox" placeholder="City Name" />
+      <button id="Submit">SUBMIT</button>
+    </form>
+    <div class="mainbox">
+      <div class="box1 current">
+        <img id="image" src="" alt="image of weather" />
+        <div class="itd">
+          <span id="temperature"><span id="degree"></span></span>
+          <span id="location"></span>
+          <div class="mimxtem">
+            <span id="mintem"><span></span></span>
+            <span id="maxtem"><span></span></span>
+          </div>
+        </div>
+        <div class="ssr">
+          <div class="susi">
+            <img id="sus" src="sunset 1.png" alt="sunset image" />
+            <span id="sunset"></span>
+          </div>
+          <div class="suri">
+            <img id="sur" src="sunrise 1.png" alt="sunrise image" />
+            <span id="sunrise"></span>
+          </div>
+        </div>
+        <div class="error">
+          <div class="box3">
+            <img src="boyanimal.png" alt="" />
+            <p>Location not found!</p>
+          </div>
+        </div>
+      </div>
+      <div class="box2 forcast">
+        <!-- <div class="uhw">
+          <h3 id="uv">UV INDEX</h3>
+          <h3 id="humidity">HUMIDITY</h3>
+          <h3 id="wind">WIND SPEED</h3>
+        </div> -->
+        <h3 class="day1"></h3>
+        <h3 class="day2"></h3>
+        <h3 class="day3"></h3>
+        <h3 class="day4"></h3>
+        <h3 class="day5"></h3>
+        <h3 class="day6"></h3>
+        <h3 class="day7"></h3>
+        <h3 class="day8"></h3>
+      </div>
+    </div>
+    <!-- <footer>
+    <p>Amazing update</p>
+   </footer>  -->
+  </body>
+</html>
