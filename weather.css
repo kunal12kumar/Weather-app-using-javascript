@@ -1,0 +1,323 @@
+/* this is to universal change */
+*/ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+/* Now creating background for the website */
+body {
+    /* background-image: url("blue sea.jpg"); */
+    background-image: linear-gradient(160deg, #BF2A97, #6B14A6, #3866F2, #590B8C);
+
+    /* /* background-position:top ; */
+    background-size: cover;
+    /* /* background-repeat:no-repeat; */
+}
+
+/* this is for the form */
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Now for input box */
+#searchbox {
+    width: 20rem;
+    height: 3rem;
+    border: 2px solid rgb(212, 0, 255);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    animation: move 1.3s ease-in-out 1 forwards;
+    text-transform: uppercase;
+}
+
+/* keyframes for the searchbox */
+
+
+/* hover for the hover  */
+#searchbox:focus {
+    border: 4px solid rgb(212, 0, 255);
+
+
+}
+
+/* for submit button  */
+#Submit {
+    width: 9rem;
+    height: 3rem;
+    border: 2px solid blue;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+
+}
+
+
+#Submit:hover {
+    transform: scale(0.8);
+    background-color: #e696b0;
+}
+
+/* for main box */
+
+.mainbox {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    height: 33em;
+}
+
+/* this is for the first box of the mainbox */
+.box1 {
+    position: relative;
+    width: 30%;
+    height: 95%;
+    border: 3px solid rgb(11, 11, 130,0.9);
+    border-radius: 20px;
+    margin: 20px;
+    background: rgb(255, 255, 255, 0.2);
+    /* background-image: linear-gradient(to right,#3866F2,#BF2A97,blurr); */
+    transition: height 0.3s ease-in;
+    bottom: 90px;
+}
+
+/* this for the second box of the main box */
+.box2 {
+    position: relative;
+    width: 30%;
+    height: 95%;
+    margin: 20px;
+    border: 4px solid rgb(11, 11, 130, 0.9);
+    border-radius: 20px;
+    background: rgb(255, 255, 255, 0.2);
+    /* background-image: linear-gradient(186deg, #BF2A97, #2b27e4); */
+    /* filter: blur(30px); */
+    transition: height 0.3s ease-in;
+    bottom: 90px;
+}
+
+
+/* this is for the styling of contents of box1 in which current updates of weather ,sunset ,sunrise ,date ,time ,uv,wind ,humidity will be displayed */
+
+/*  class "itd" this for the updates for weather dateand time in  */
+
+img {
+    width: 90%;
+    height: 40%;
+    margin: 0.4em;
+    border: 4px solid rgba(239, 230, 230, 0.5);
+    border-radius: 15px 40px;
+    margin-left: 0.7em;
+
+}
+
+/* this is for the location and temperature */
+.itd {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    gap: 0.5em;
+    justify-content: center;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom, #e518af, #1e09a5);
+    border-radius: 50px 15px;
+    box-decoration-break: slice;
+    margin: 0.4em;
+    border: 1.5px solid white;
+    /* border-bottom: 2px solid red; */
+    /* text-decoration: underline */
+    ;
+}
+
+/* for temperature */
+#degree{
+    font-size: medium;
+    position: relative;
+    bottom: 4px;
+
+}
+#temperature {
+    color: #1e09a5;
+    text-align: center;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    text-shadow: 1px 1px #130316;
+    color: #210530;
+
+}
+
+/* this is for the box min and max time */
+
+#location {
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: 1.7em;
+    border: #b227e4 solid 3px;
+    border-radius: 2px 30px;
+    text-shadow: 1px 1px #130316;
+    color: #210530;
+}
+
+#mintem {
+    margin-right: 3em;
+    font-size: 1.3em;
+    text-shadow: 1px 1px #080309;
+    color: #e518af;
+    font-weight: bold;
+}
+#mintem .span,#maxtem .span{
+    font-size: medium;
+}
+
+#maxtem {
+    font-size: 1.3em;
+    text-shadow: 1px 1px #0b020e;
+    color: #e518af;
+    font-weight: bold;
+
+}
+
+/* this is for the location */
+#location {
+    width: 6em;
+    height: 1.3em;
+    animation: move 2s ease-in-out;
+
+}
+
+
+/* this is for the sunrise and sunset image  */
+.ssr {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 70%;
+    gap: 2.3em;
+    background-image: linear-gradient(to top, #e518af, #1e09a5);
+    border: 1.5px solid white;
+    border-radius: 25px 40px;
+    margin: 0.4em;
+    padding: 0.05em;
+    /* box-shadow: 3px 4px #c7a84d ; */
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+/* this is for sunset time and image */
+.susi {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    text-align: center;
+
+}
+
+/* image of sunset */
+#sus {
+    width: 8.5em;
+    height: 5.5em;
+    border-radius: 40%;
+}
+
+/* this is for sunrise time and image */
+.suri {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    text-align: center;
+
+}
+
+/* image of sunrise */
+#sur {
+    width: 8.5em;
+    height: 5.5em;
+    border-radius: 40%;
+}
+
+/* this is for the humidity uvindex and winds */
+.uhw {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30%;
+}
+/* this is for hide all from the box */
+#image,.itd,.ssr,.error{
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#image.live,
+.itd.live,
+.ssr.live,
+.error.live{
+    visibility: visible;
+}
+/* this is for make visisble when location found */
+.error{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.error p{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+/* animation for the image  */
+#image.live{
+    transform: translateZ(100%);
+    transition: transform 1.6s ease-in;
+    transition-delay: 0.6s;
+}
+/* animation for the search box */
+@keyframes move {
+    from {
+        width: 0px;
+
+    }
+
+    to {
+        width: 170px;
+
+    }
+}
+
+/* media quries for the form in this if width get less than 480 px then flex direction will change to column */
+
+@media (max-width:480px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainbox {
+        flex-direction: column;
+    }
+
+    .box1,
+    .box2 {
+        width: 70%;
+    }
+
+}
+
+@media (max-width:335px) {
+    html {
+        font-size: 10px;
+    }
+}
