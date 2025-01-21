@@ -23,10 +23,9 @@ You can view a live demo of the weather forecasting website [here](insert-your-l
 
 ## Folder Structure
 
-- `index.html`: The main HTML file where the weather information is displayed.
-- `style.css`: Contains the styles for the website layout and design.
-- `script.js`: JavaScript file responsible for fetching the weather data and updating the UI.
-- `assets/`: Folder containing images or icons used in the website.
+- `weather.html`: The main HTML file where the weather information is displayed.
+- `weather.css`: Contains the styles for the website layout and design.
+- `weather.js`: JavaScript file responsible for fetching the weather data and updating the UI.
 
 ## How to Use
 
